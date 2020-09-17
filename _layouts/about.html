@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
+    {% include mobirise_header.html %}
+    <title>About - Chunshang Li</title>
+</head>
+
+<body style="background: #fcfcfc">
+    {% include header.html %}
+    <section class="mbr-section content6 cid-qQ0hVw2eJh" id="content6-x">
+        <div class="container">
+            <div class="media-container-row">
+                <div class="col-lg-8 col-md-8">
+                    <div class="media-container-row">
+                        <div class="mbr-figure" style="width: 100%;">
+                            <img src="/data/images/working_on_rover_utah.jpg">
+                            <figcaption class="figure-caption">
+                                Checking on the rover after transporting the rover to Mars Desert Research Station in Utah for competition.
+                            </figcaption>
+                        </div>
+                        <div class="media-content">
+                            <div class="mbr-section-text">
+                                {{ content }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="media-container-row">
+                <div class="col-md-6">
+                    <div class="mbr-figure" style="width: 100%; text-align:center;">
+                        <img src="/data/images/yosemite_glacier_point.jpg">
+                        <figcaption class="figure-caption">
+                            At Glacier Point, hiking the Four-mile and Panorama Trail loop in Yosemite.
+                        </figcaption>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mbr-figure" style="width: 100%; text-align:center;">
+                        <img src="/data/images/killarney_canoe.jpg">
+                        <figcaption class="figure-caption">
+                            Canoe camping in Killarney, Ontario.
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% include mobirise_scripts.html %}
+
+</body>
+
+</html>

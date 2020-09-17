@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
+    <!-- Site made with Mobirise Website Builder v4.7.1, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.7.1, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="icon" href="/data/icons/robot-hand-drawn-outline.png" type="image/x-icon">
+    <meta name="description" content="Web Maker Description">
+    <link rel="stylesheet" href="/assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="/assets/tether/tether.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="/assets/theme/css/style.css">
+    <link rel="stylesheet" href="/assets/gallery/style.css">
+    <link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css" type="text/css">
+
+    <title>Work - Chunshang Li</title>
+</head>
+
+<body style="background: #fcfcfc">
+
+    {% include header.html %}
+
+    <section class="mbr-gallery mbr-slider-carousel cid-qQ06hqBdXC" id="gallery1-a">
+
+        <div class="container">
+            <div>
+                <!-- Filter -->
+                <!-- Gallery -->
+                <div class="mbr-gallery-row">
+                    <div class="mbr-gallery-layout-default">
+                        <div>
+                            <div>
+                                {% for post in site.posts %}
+                                <div class="mbr-gallery-item mbr-gallery-item--p4" data-href="{{ post.url }}">
+                                    <div>
+                                        <a href="{{ post.url }}">
+                                            <img src="{{ post.thumbnail_image }}">
+                                            <span class="mbr-gallery-title mbr-fonts-style display-7">{{ post.title }}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="/assets/popper/popper.min.js"></script>
+    <script src="/assets/tether/tether.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="/assets/masonry/masonry.pkgd.min.js"></script>
+    <script src="/assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
+    <script src="/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="/assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+    <script src="/assets/dropdown/js/script.min.js"></script>
+    <script src="/assets/theme/js/script.js"></script>
+    <script src="/assets/slidervideo/script.js"></script>
+    <script src="/assets/gallery/player.min.js"></script>
+    <script src="/assets/gallery/script.js"></script>
+
+    <script>
+        $('.mbr-gallery-item').click(function () {
+            window.location.href = $(this).data('href');
+        })
+    </script>
+
+</body>
+
+</html>
